@@ -31,32 +31,61 @@ int main(int argc, char** argv) {
         /******************ADD YOUR SIMULATION CODE HERE*************************/
         if (activity == "CPU")
         {
-            execution += std:: to_string(time_count) + ", " + std:: to_string(duration_intr) + ", CPU\n"; 
+            execution += std:: to_string(time_count) + ", " + std:: to_string(duration_intr) + ", CPU Burst\n"; 
             time_count += duration_intr;
 
         }
+
+        else if ((activity == "SYSCALL") && duration_intr > 19)
+        {
+            execution += "Device number does not exist\n";
+        }
+
         else if (activity == "SYSCALL")
         {
+
             auto [ISR_output, ISR_duration] = intr_boilerplate(time_count, duration_intr, 1, vectors);
             execution += ISR_output;
             time_count = ISR_duration;
 
-            execution += std:: to_string(time_count) + ", " + std:: to_string(delays.at(duration_intr)) + " SYSCALL for ISR Address " + "\n";
+            execution+= std:: to_string(time_count) + ", " + std:: to_string(40) + ", SYSCALL: run the ISR (device driver)\n";
+            time_count += 40;
+
+            execution+= std:: to_string(time_count) + ", " + std:: to_string(40) + ", transfer data from device to memory\n";
+            time_count += 40;
+                                    
+            execution += std:: to_string(time_count) + ", " + std:: to_string(delays.at(duration_intr)) + " check for errors" + "\n";
             time_count += delays.at(duration_intr);
-        
+
+            execution+= std:: to_string(time_count) + ", " + std:: to_string(1) + ", IRET\n";
+            time_count ++;
             
-            execution += std:: to_string(time_count) + ", " + std:: to_string(1) + ", IRET\n";
-            time_count++;
+        }
+
+        else if ((activity == "END_IO") && duration_intr > 19)
+        {
+            execution += "Device number does not exist\n";
         }
 
         else if (activity == "END_IO")
         {
-            execution += std:: to_string(time_count) + ", " + "ENDIO for ISR Address " + std:: to_string(duration_intr) + "\n";
+           
             auto [ENDIO_output, ENDIO_duration] = intr_boilerplate(time_count, duration_intr, 1, vectors);
             execution += ENDIO_output;
             time_count = ENDIO_duration;
+
+            execution+= std:: to_string(time_count) + ", " + std:: to_string(40) + ", ENDIO: run the ISR (device driver)\n";
+            time_count += 40;
+
+            execution += std:: to_string(time_count) + ", " + std:: to_string(delays.at(duration_intr)) + " check device status" + "\n";
+            time_count += delays.at(duration_intr);
+
+            execution+= std:: to_string(time_count) + ", " + std:: to_string(1) + ", IRET\n";
+            time_count ++;
+
         }
 
+        
         /************************************************************************/
 
     }
