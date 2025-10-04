@@ -1,0 +1,40 @@
+0, 50, CPU
+50, 1, switch to kernel mode
+51, 20, context saved
+71, 1, find vector 3 in memory position 0x0006
+72, 1, load address 0X042B into the PC
+73, 300 SYSCALL for ISR Address 
+373, 1, IRET
+374, 40, CPU
+414, ENDIO for ISR Address 3
+414, 1, switch to kernel mode
+415, 20, context saved
+435, 1, find vector 3 in memory position 0x0006
+436, 1, load address 0X042B into the PC
+437, 60, CPU
+497, 1, switch to kernel mode
+498, 20, context saved
+518, 1, find vector 8 in memory position 0x0010
+519, 1, load address 0X06EF into the PC
+520, 1000 SYSCALL for ISR Address 
+1520, 1, IRET
+1521, 25, CPU
+1546, ENDIO for ISR Address 8
+1546, 1, switch to kernel mode
+1547, 20, context saved
+1567, 1, find vector 8 in memory position 0x0010
+1568, 1, load address 0X06EF into the PC
+1569, 45, CPU
+1614, 1, switch to kernel mode
+1615, 20, context saved
+1635, 1, find vector 6 in memory position 0x000C
+1636, 1, load address 0X0639 into the PC
+1637, 265 SYSCALL for ISR Address 
+1902, 1, IRET
+1903, 70, CPU
+1973, ENDIO for ISR Address 6
+1973, 1, switch to kernel mode
+1974, 20, context saved
+1994, 1, find vector 6 in memory position 0x000C
+1995, 1, load address 0X0639 into the PC
+1996, 55, CPU

@@ -1,0 +1,66 @@
+0, 75, CPU
+75, 1, switch to kernel mode
+76, 30, context saved
+106, 1, find vector 5 in memory position 0x000A
+107, 1, load address 0X048B into the PC
+108, 211 SYSCALL for ISR Address 
+319, 1, IRET
+320, 84, CPU
+404, ENDIO for ISR Address 5
+404, 1, switch to kernel mode
+405, 30, context saved
+435, 1, find vector 5 in memory position 0x000A
+436, 1, load address 0X048B into the PC
+437, 22, CPU
+459, 1, switch to kernel mode
+460, 30, context saved
+490, 1, find vector 10 in memory position 0x0014
+491, 1, load address 0X07B0 into the PC
+492, 564 SYSCALL for ISR Address 
+1056, 1, IRET
+1057, 80, CPU
+1137, ENDIO for ISR Address 10
+1137, 1, switch to kernel mode
+1138, 30, context saved
+1168, 1, find vector 10 in memory position 0x0014
+1169, 1, load address 0X07B0 into the PC
+1170, 79, CPU
+1249, 1, switch to kernel mode
+1250, 30, context saved
+1280, 1, find vector 6 in memory position 0x000C
+1281, 1, load address 0X0639 into the PC
+1282, 265 SYSCALL for ISR Address 
+1547, 1, IRET
+1548, 68, CPU
+1616, ENDIO for ISR Address 6
+1616, 1, switch to kernel mode
+1617, 30, context saved
+1647, 1, find vector 6 in memory position 0x000C
+1648, 1, load address 0X0639 into the PC
+1649, 71, CPU
+1720, 1, switch to kernel mode
+1721, 30, context saved
+1751, 1, find vector 4 in memory position 0x0008
+1752, 1, load address 0X0292 into the PC
+1753, 250 SYSCALL for ISR Address 
+2003, 1, IRET
+2004, 97, CPU
+2101, ENDIO for ISR Address 4
+2101, 1, switch to kernel mode
+2102, 30, context saved
+2132, 1, find vector 4 in memory position 0x0008
+2133, 1, load address 0X0292 into the PC
+2134, 84, CPU
+2218, 1, switch to kernel mode
+2219, 30, context saved
+2249, 1, find vector 7 in memory position 0x000E
+2250, 1, load address 0X00BD into the PC
+2251, 152 SYSCALL for ISR Address 
+2403, 1, IRET
+2404, 38, CPU
+2442, ENDIO for ISR Address 7
+2442, 1, switch to kernel mode
+2443, 30, context saved
+2473, 1, find vector 7 in memory position 0x000E
+2474, 1, load address 0X00BD into the PC
+2475, 90, CPU
