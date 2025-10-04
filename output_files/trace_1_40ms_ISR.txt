@@ -1,0 +1,66 @@
+0, 75, CPU
+75, 1, switch to kernel mode
+85, 10, context saved
+95, 1, find vector 5 in memory position 0x000A
+105, 1, load address 0X048B into the PC
+115, 211 SYSCALL for ISR Address 
+326, 1, IRET
+327, 84, CPU
+411, ENDIO for ISR Address 5
+411, 1, switch to kernel mode
+421, 10, context saved
+431, 1, find vector 5 in memory position 0x000A
+441, 1, load address 0X048B into the PC
+451, 22, CPU
+473, 1, switch to kernel mode
+483, 10, context saved
+493, 1, find vector 10 in memory position 0x0014
+503, 1, load address 0X07B0 into the PC
+513, 564 SYSCALL for ISR Address 
+1077, 1, IRET
+1078, 80, CPU
+1158, ENDIO for ISR Address 10
+1158, 1, switch to kernel mode
+1168, 10, context saved
+1178, 1, find vector 10 in memory position 0x0014
+1188, 1, load address 0X07B0 into the PC
+1198, 79, CPU
+1277, 1, switch to kernel mode
+1287, 10, context saved
+1297, 1, find vector 6 in memory position 0x000C
+1307, 1, load address 0X0639 into the PC
+1317, 265 SYSCALL for ISR Address 
+1582, 1, IRET
+1583, 68, CPU
+1651, ENDIO for ISR Address 6
+1651, 1, switch to kernel mode
+1661, 10, context saved
+1671, 1, find vector 6 in memory position 0x000C
+1681, 1, load address 0X0639 into the PC
+1691, 71, CPU
+1762, 1, switch to kernel mode
+1772, 10, context saved
+1782, 1, find vector 4 in memory position 0x0008
+1792, 1, load address 0X0292 into the PC
+1802, 250 SYSCALL for ISR Address 
+2052, 1, IRET
+2053, 97, CPU
+2150, ENDIO for ISR Address 4
+2150, 1, switch to kernel mode
+2160, 10, context saved
+2170, 1, find vector 4 in memory position 0x0008
+2180, 1, load address 0X0292 into the PC
+2190, 84, CPU
+2274, 1, switch to kernel mode
+2284, 10, context saved
+2294, 1, find vector 7 in memory position 0x000E
+2304, 1, load address 0X00BD into the PC
+2314, 152 SYSCALL for ISR Address 
+2466, 1, IRET
+2467, 38, CPU
+2505, ENDIO for ISR Address 7
+2505, 1, switch to kernel mode
+2515, 10, context saved
+2525, 1, find vector 7 in memory position 0x000E
+2535, 1, load address 0X00BD into the PC
+2545, 90, CPU

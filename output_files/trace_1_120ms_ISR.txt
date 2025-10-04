@@ -1,0 +1,66 @@
+0, 75, CPU
+75, 1, switch to kernel mode
+105, 30, context saved
+135, 1, find vector 5 in memory position 0x000A
+165, 1, load address 0X048B into the PC
+195, 211 SYSCALL for ISR Address 
+406, 1, IRET
+407, 84, CPU
+491, ENDIO for ISR Address 5
+491, 1, switch to kernel mode
+521, 30, context saved
+551, 1, find vector 5 in memory position 0x000A
+581, 1, load address 0X048B into the PC
+611, 22, CPU
+633, 1, switch to kernel mode
+663, 30, context saved
+693, 1, find vector 10 in memory position 0x0014
+723, 1, load address 0X07B0 into the PC
+753, 564 SYSCALL for ISR Address 
+1317, 1, IRET
+1318, 80, CPU
+1398, ENDIO for ISR Address 10
+1398, 1, switch to kernel mode
+1428, 30, context saved
+1458, 1, find vector 10 in memory position 0x0014
+1488, 1, load address 0X07B0 into the PC
+1518, 79, CPU
+1597, 1, switch to kernel mode
+1627, 30, context saved
+1657, 1, find vector 6 in memory position 0x000C
+1687, 1, load address 0X0639 into the PC
+1717, 265 SYSCALL for ISR Address 
+1982, 1, IRET
+1983, 68, CPU
+2051, ENDIO for ISR Address 6
+2051, 1, switch to kernel mode
+2081, 30, context saved
+2111, 1, find vector 6 in memory position 0x000C
+2141, 1, load address 0X0639 into the PC
+2171, 71, CPU
+2242, 1, switch to kernel mode
+2272, 30, context saved
+2302, 1, find vector 4 in memory position 0x0008
+2332, 1, load address 0X0292 into the PC
+2362, 250 SYSCALL for ISR Address 
+2612, 1, IRET
+2613, 97, CPU
+2710, ENDIO for ISR Address 4
+2710, 1, switch to kernel mode
+2740, 30, context saved
+2770, 1, find vector 4 in memory position 0x0008
+2800, 1, load address 0X0292 into the PC
+2830, 84, CPU
+2914, 1, switch to kernel mode
+2944, 30, context saved
+2974, 1, find vector 7 in memory position 0x000E
+3004, 1, load address 0X00BD into the PC
+3034, 152 SYSCALL for ISR Address 
+3186, 1, IRET
+3187, 38, CPU
+3225, ENDIO for ISR Address 7
+3225, 1, switch to kernel mode
+3255, 30, context saved
+3285, 1, find vector 7 in memory position 0x000E
+3315, 1, load address 0X00BD into the PC
+3345, 90, CPU

@@ -1,0 +1,66 @@
+0, 75, CPU
+75, 1, switch to kernel mode
+125, 50, context saved
+175, 1, find vector 5 in memory position 0x000A
+225, 1, load address 0X048B into the PC
+275, 211 SYSCALL for ISR Address 
+486, 1, IRET
+487, 84, CPU
+571, ENDIO for ISR Address 5
+571, 1, switch to kernel mode
+621, 50, context saved
+671, 1, find vector 5 in memory position 0x000A
+721, 1, load address 0X048B into the PC
+771, 22, CPU
+793, 1, switch to kernel mode
+843, 50, context saved
+893, 1, find vector 10 in memory position 0x0014
+943, 1, load address 0X07B0 into the PC
+993, 564 SYSCALL for ISR Address 
+1557, 1, IRET
+1558, 80, CPU
+1638, ENDIO for ISR Address 10
+1638, 1, switch to kernel mode
+1688, 50, context saved
+1738, 1, find vector 10 in memory position 0x0014
+1788, 1, load address 0X07B0 into the PC
+1838, 79, CPU
+1917, 1, switch to kernel mode
+1967, 50, context saved
+2017, 1, find vector 6 in memory position 0x000C
+2067, 1, load address 0X0639 into the PC
+2117, 265 SYSCALL for ISR Address 
+2382, 1, IRET
+2383, 68, CPU
+2451, ENDIO for ISR Address 6
+2451, 1, switch to kernel mode
+2501, 50, context saved
+2551, 1, find vector 6 in memory position 0x000C
+2601, 1, load address 0X0639 into the PC
+2651, 71, CPU
+2722, 1, switch to kernel mode
+2772, 50, context saved
+2822, 1, find vector 4 in memory position 0x0008
+2872, 1, load address 0X0292 into the PC
+2922, 250 SYSCALL for ISR Address 
+3172, 1, IRET
+3173, 97, CPU
+3270, ENDIO for ISR Address 4
+3270, 1, switch to kernel mode
+3320, 50, context saved
+3370, 1, find vector 4 in memory position 0x0008
+3420, 1, load address 0X0292 into the PC
+3470, 84, CPU
+3554, 1, switch to kernel mode
+3604, 50, context saved
+3654, 1, find vector 7 in memory position 0x000E
+3704, 1, load address 0X00BD into the PC
+3754, 152 SYSCALL for ISR Address 
+3906, 1, IRET
+3907, 38, CPU
+3945, ENDIO for ISR Address 7
+3945, 1, switch to kernel mode
+3995, 50, context saved
+4045, 1, find vector 7 in memory position 0x000E
+4095, 1, load address 0X00BD into the PC
+4145, 90, CPU
